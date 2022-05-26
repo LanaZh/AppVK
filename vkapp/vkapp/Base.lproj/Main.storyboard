@@ -1,24 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="vkapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="аватар" translatesAutoresizingMaskIntoConstraints="NO" id="JGW-mO-3ho">
+                                <rect key="frame" x="30" y="84" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="IXa-he-yFL"/>
+                                    <constraint firstAttribute="height" constant="130" id="nLM-cI-TGs"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Супер Марио" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUw-TT-A8B">
+                                <rect key="frame" x="175" y="89" width="108" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Установить статус" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="An9-Ao-U29">
+                                <rect key="frame" x="175" y="115" width="132" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" systemColor="linkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="заметки" translatesAutoresizingMaskIntoConstraints="NO" id="LHK-Au-ybi">
+                                <rect key="frame" x="30" y="239" width="57" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="57" id="2fJ-Fs-Xu8"/>
+                                    <constraint firstAttribute="height" constant="65" id="Qwt-LS-lxU"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="значок" translatesAutoresizingMaskIntoConstraints="NO" id="QLc-Rb-gHU">
+                                <rect key="frame" x="102" y="239" width="57" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="57" id="cyW-fM-phw"/>
+                                    <constraint firstAttribute="width" constant="57" id="dj7-9a-bso"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="57" id="mho-0N-n9o"/>
+                                    <constraint firstAttribute="height" constant="65" id="r5C-1V-1DF"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="фото" translatesAutoresizingMaskIntoConstraints="NO" id="fFC-aj-4Sw">
+                                <rect key="frame" x="174" y="243" width="57" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="33Y-p8-Um0"/>
+                                    <constraint firstAttribute="width" constant="57" id="cBS-Bo-VcH"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_347004" translatesAutoresizingMaskIntoConstraints="NO" id="NgB-Sf-jrZ">
+                                <rect key="frame" x="246" y="243" width="62" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="nHk-7L-gbu"/>
+                                    <constraint firstAttribute="height" constant="57" id="zRQ-O2-T39"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.152867268" green="0.152867268" blue="0.152867268" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.152867268" green="0.152867268" blue="0.152867268" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="QLc-Rb-gHU" firstAttribute="leading" secondItem="LHK-Au-ybi" secondAttribute="trailing" constant="15" id="0Af-e1-bdE"/>
+                            <constraint firstItem="JGW-mO-3ho" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="1Hl-cg-1bQ"/>
+                            <constraint firstItem="LHK-Au-ybi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="AEw-pi-P0Z"/>
+                            <constraint firstItem="JGW-mO-3ho" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="EWf-A7-Y6o"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TUw-TT-A8B" secondAttribute="trailing" symbolic="YES" id="IMQ-Bf-9Dw"/>
+                            <constraint firstItem="fFC-aj-4Sw" firstAttribute="leading" secondItem="QLc-Rb-gHU" secondAttribute="trailing" constant="15" id="Lti-3f-kXE"/>
+                            <constraint firstItem="TUw-TT-A8B" firstAttribute="leading" secondItem="JGW-mO-3ho" secondAttribute="trailing" constant="15" id="N1o-lD-rTW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="An9-Ao-U29" secondAttribute="trailing" symbolic="YES" id="Phr-Wh-WVa"/>
+                            <constraint firstItem="TUw-TT-A8B" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="TPs-Wx-xUO"/>
+                            <constraint firstItem="fFC-aj-4Sw" firstAttribute="leading" secondItem="QLc-Rb-gHU" secondAttribute="trailing" constant="15" id="ZCH-CY-AsQ"/>
+                            <constraint firstItem="An9-Ao-U29" firstAttribute="leading" secondItem="JGW-mO-3ho" secondAttribute="trailing" constant="15" id="Zq3-sl-8ci"/>
+                            <constraint firstItem="QLc-Rb-gHU" firstAttribute="top" secondItem="JGW-mO-3ho" secondAttribute="bottom" constant="25" id="caE-72-m74"/>
+                            <constraint firstItem="TUw-TT-A8B" firstAttribute="leading" secondItem="JGW-mO-3ho" secondAttribute="trailing" constant="15" id="ddL-yM-VtO"/>
+                            <constraint firstItem="NgB-Sf-jrZ" firstAttribute="leading" secondItem="fFC-aj-4Sw" secondAttribute="trailing" constant="15" id="f3f-nU-JaV"/>
+                            <constraint firstItem="fFC-aj-4Sw" firstAttribute="top" secondItem="An9-Ao-U29" secondAttribute="bottom" constant="110" id="f5W-KN-Nnx"/>
+                            <constraint firstItem="fFC-aj-4Sw" firstAttribute="top" secondItem="An9-Ao-U29" secondAttribute="bottom" constant="110" id="jAY-Sn-WxT"/>
+                            <constraint firstItem="An9-Ao-U29" firstAttribute="top" secondItem="TUw-TT-A8B" secondAttribute="bottom" constant="5" id="kld-SU-F5U"/>
+                            <constraint firstItem="NgB-Sf-jrZ" firstAttribute="top" secondItem="An9-Ao-U29" secondAttribute="bottom" constant="110" id="wgO-aN-0n8"/>
+                            <constraint firstItem="LHK-Au-ybi" firstAttribute="top" secondItem="JGW-mO-3ho" secondAttribute="bottom" constant="25" id="zdi-LM-QS4"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="67.633928571428569"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="img_347004" width="980" height="892"/>
+        <image name="аватар" width="1024" height="1038"/>
+        <image name="заметки" width="980" height="980"/>
+        <image name="значок" width="980" height="926"/>
+        <image name="фото" width="980" height="980"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
